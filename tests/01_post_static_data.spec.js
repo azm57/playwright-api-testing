@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-//test case 11
+//test case 1
 test('should be able to create a booking', async ({ request }) => {
     const response = await request.post(`/booking`, {
         data: {
