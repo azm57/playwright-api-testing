@@ -4,8 +4,8 @@ const { test, expect } = require('@playwright/test');
 test('should be able to get subset of booking details using query parameters', async ({ request }) => {
     const response = await request.get(`/booking`, {
         params: {
-            firstname: "Susan",
-            lastname: "Jackson"
+            firstname: "Jim",
+            lastname: "Brown"
         },
     });
     console.log(await response.json());
